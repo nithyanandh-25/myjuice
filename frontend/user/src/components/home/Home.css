@@ -1,0 +1,251 @@
+  .home-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    font-size: 30px;
+    color: #4CAF50;
+  }
+
+  .logo1{
+    font-size: 32px;
+    color: #2f9134;
+  }
+  
+  .hsf {
+    display: flex;
+    gap: 15px;  /* Increased gap between buttons */
+  }
+  
+  .hsf button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;  /* Increased padding for buttons */
+    font-size: 20px;  /* Increased font size for better visibility */
+    transition: transform 0.2s; /* Add a transition for hover effect */
+    display: flexbox;
+  
+  }
+  
+  .hsf button:hover {
+    transform: scale(1.1);  /* Slightly enlarge the button on hover */
+    color:#2f9134;
+  }
+ 
+  .home-navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .home-navbar li:hover{
+    cursor: pointer;
+    color:#4CAF50;
+    transform: scale(1.1);
+  }
+  
+  .home-productsList {
+    display: flex;                /* Use flexbox for layout */
+    flex-wrap: wrap;             /* Allow wrapping of product cards */
+    justify-content: center;      /* Center the product cards */
+    padding: 20px;               /* Padding around the product list */
+  }
+
+  .product-card {
+    border: 1px solid #dee2e6;   /* Light border around each product card */
+    border-radius: 8px;          /* Rounded corners */
+    margin: 15px;                /* Margin around each card */
+    padding: 15px;               /* Padding inside each card */
+    width: 200px;                /* Fixed width for product cards */
+    text-align: center;          /* Center-align text in product cards */
+    background-color: #fff;      /* White background for product cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative;          /* Needed for absolute positioning of the favorite icon */
+  }
+
+  .product-card:hover {
+      transform: scale(1.05);      /* Slightly enlarge card on hover */
+  }
+
+  .favo {
+      position: absolute;           /* Positioning for the favorite icon */
+      top: 10px;                   /* Space from the top */
+      right: 10px;                 /* Space from the right */
+      cursor: pointer;             /* Pointer cursor on hover */
+      font-size: 1.2rem;  /* Increased font size for better visibility */
+  }
+
+  .favo:hover{
+    color: #4CAF50;
+    
+  }
+
+  .product-table-image {
+      max-width: 100%;             /* Responsive image width */
+      height: auto;                /* Maintain aspect ratio */
+      border-radius: 4px;          /* Rounded corners for images */
+  }
+
+  .product-details {
+      margin-top: 10px;            /* Space above product details */
+  }
+
+  .product-name {
+      font-size: 1.2rem;           /* Font size for product name */
+      margin: 5px 0;               /* Vertical spacing */
+      color: #333;                 /* Dark text color */
+  }
+
+  .product-price {
+    color: #2f9134;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;  /* Allow the price to be inline with quantity */
+    margin-left: 5px;    /* Add spacing between quantity and price */
+    margin-right: 5px;
+  }
+
+  .product-quantity {
+    display: inline-block;  /* Allow the quantity to be inline with price */
+  }
+
+  .add-to-cart-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .add-to-cart-btn:hover {
+    background-color: #2f9134;
+  }
+
+  .no-products {
+      font-size: 1.2rem;           /* Font size for no products message */
+      color: #777;                 /* Grey color for message */
+      text-align: center;          /* Center the message */
+      margin: 20px 0;              /* Margin above and below */
+  }
+  
+  footer {
+    background-color: #2b2b2d; /* Light background color */
+    padding: 20px;             /* Padding around the footer */
+    text-align: center;        /* Center-align text */
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+
+  .social-header {
+      font-size: 1.5rem;         /* Font size for the social header */
+      margin-bottom: 10px;       /* Space below the header */
+      color: #c3b9b9;               /* Text color */
+  }
+
+  .social-media-links {
+      list-style-type: none;     /* Remove bullets */
+      padding: 0;                /* Remove padding */
+      margin: 0;                 /* Remove margin */
+      display: flex;             /* Use flexbox for horizontal alignment */
+      justify-content: center;    /* Center the links */
+  }
+
+  .social-media-links li {
+      margin: 0 15px;           /* Space between icons */
+  }
+
+  .footer-Menu {
+      list-style-type: none;     /* Remove bullets */
+      padding: 0;                /* Remove padding */
+      margin: 10px 0;            /* Space above and below the menu */
+  }
+
+  .footer-Menu li {
+      margin: 5px 0;             /* Space between menu items */
+  }
+
+  .footer-p {
+      font-size: 1.5rem;         /* Font size for the copyright */
+      margin-top: 20px;          /* Space above the copyright text */
+      color: #665f5f;               /* Text color */
+  }
+
+  /* Links styles */
+  .footer-Menu a, 
+  .social-media-links a {
+      text-decoration: none;      /* Remove underline from links */
+      color: #4CAF50;            /* Link color */
+      transition: color 0.3s;    /* Transition effect for hover */
+  }
+
+  .footer-Menu a:hover, 
+  .social-media-links a:hover {
+      color: #2f9134;            /* Darker shade on hover */
+  }
+
+  .copyright {
+      font-size: 1rem;         /* Smaller font size for social copyright */
+      margin-top: 10px;          /* Space above the social copyright text */
+      color: #666;               /* Text color */
+  }
+
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .home-header {
+      flex-direction: column;
+    }
+
+    .home-navbar ul {
+      flex-direction: column;
+    }
+  }
+
+  /* Main container for the dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 100%; /* Adjust as per your header height */
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 200px;
+  z-index: 10;
+  list-style: none;
+  padding: 10px 0;
+  margin: 10px 0 0;
+}
+
+/* Dropdown items */
+.profile-dropdown li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-dropdown li:hover {
+  background-color: #f0f0f0; /* Background on hover */
+}
+
+/* Links within dropdown items */
+.profile-dropdown li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+/* Dropdown container within the profile button */
+.hsf {
+  position: relative; /* This allows the dropdown to be positioned relative to the profile button */
+}

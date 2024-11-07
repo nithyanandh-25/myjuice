@@ -1,0 +1,176 @@
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Just below the cart panel */
+  }
+  
+  .cart-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .cart-panel.open {
+    transform: translateX(0); /* Slide in when open */
+  }
+
+  .cart-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #f8f8f8;
+}
+
+.close-cart {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-items {
+  padding: 5px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: calc(100% - 140px); /* Adjust height to allow room for header and footer */
+  border-top: 1px solid #ccc; /* Top border for separation */
+  background-color: #f9f9f9; /* Light background for the cart area */
+}
+
+.cart-item {
+  display: flex;    
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Space between items */
+  padding: 3px;
+  border: 1px solid #ddd; /* Border around each item */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #fff; /* White background for cart items */
+  transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.cart-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.cart-item-image {
+  width: 60px; /* Fixed width for images */
+  height: 110px; /* Fixed height for images */
+  border-radius: 5px; /* Match item corners */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between image and details */
+}
+
+.cart-item-details {
+  flex-grow: 1; /* Allow details to take remaining space */
+}
+
+.cart-item-name {
+  font-size: 16px; /* Font size for item name */
+  font-weight: bold; /* Bold item name */
+  margin: 0; /* Remove default margin */
+}
+
+.cart-item-price {
+  font-size: 14px; /* Font size for price */
+  color: #555; /* Darker color for price text */
+  margin-top: 5px; /* Space above price text */
+}
+
+.empty-cart-message {
+  text-align: center; /* Center the message */
+  color: #888; /* Light gray for empty cart text */
+  font-size: 16px; /* Font size for empty cart message */
+  margin-top: 20px; /* Space above the message */
+}
+
+.return-to-shop-btn {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.return-to-shop-btn:hover {
+  background-color: #2f9134; /* Darker green on hover */
+}
+
+.cart-footer {
+  padding: 5px;
+  background-color: #f8f8f8; /* Light background for footer */
+  border: 1px solid #ccc; /* Top border for separation */
+  position: sticky; /* Keep footer at the bottom of the panel */
+  bottom: 0; /* Align footer to bottom */
+}
+
+.total-price {
+  font-size: 18px; /* Font size for total price */
+  font-weight: bold; /* Bold total price */
+}
+
+.checkout-btn{
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 5px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-top: 10px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.checkout-btn:hover {
+  background-color: #2f9134; /* Darker green on hover */ 
+}
+
+.quantity-controls {
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center content */
+  padding: 10px; /* Padding around the controls */
+  border: 1px solid #ccc; /* Border around the quantity controls */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background for controls */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.quantity-button {
+  background-color: #4CAF50; /* Green background for buttons */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.quantity-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.quantity-display {
+  margin: 0 10px; /* Margin on left and right */
+  font-size: 16px; /* Font size for quantity display */
+  font-weight: bold; /* Bold font for visibility */
+  min-width: 30px; /* Minimum width for consistent spacing */
+  text-align: center; /* Center the text */
+}

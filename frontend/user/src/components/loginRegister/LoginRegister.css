@@ -1,0 +1,84 @@
+
+.login-register-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the container */
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+}
+
+.header-log {
+    display: flex;              /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between header and button */
+    align-items: center;       /* Vertically center items */
+    margin-bottom: 20px;      /* Space below the header */
+}
+
+.head-log {
+    margin: 0;                /* Remove default margin */
+    font-size: 1.5rem;        /* Adjust font size */
+    color: #333;              /* Change text color as needed */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);;
+    border-bottom: 2px solid #030303;
+}
+.form-group input:focus{
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.submit-button, .toggle-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.toggle-button {
+    background-color: #4CAF50;
+}
+
+.submit-button:hover, .toggle-button:hover {
+    opacity: 0.9;
+}
+
+.cancel-button {
+    display: flex;
+    justify-content: flex-end; /* Align the button to the right */
+}
+
+.cancel-button {
+    background-color: transparent; /* No background color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.5rem; /* Font size for the icon */
+    color: #f73f3f; /* Color for the cancel button */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.cancel-button:hover {
+    color: #ff0000; /* Change color on hover */
+}
